@@ -60,8 +60,31 @@
         - faster time constant leads to slightly worse performance.
 - phase coding in hippocampus, place cell that only fires when you are at specific location.
 
-### DL with "time to first spike"
 
 ## intro to neural spiking dynamics
+- properties of sodium (Na+) channel
+    - depolarize neuron when open (-70mV -> +40 mV)
+    - establish a positive feedback loop (regenerative), when voltage goes up, it should have more Na+ channels open --> drives V further up.
+    - we want a threshold voltage that this feedback loop happens (-55 mV to -45mV), when below threshould, the loop should drive V to decrese, else increase.
+- dynamic system of a Neuron
+    - state variable V(t), for simplicity ``0\leq V(t) \leq 1``
+    - parameter ``a`` is the threshould voltage
+- model requirements
+    - if ``V<a``, then ``V\to 0``,
+    - if ``V > a``, then ``v\to 1``.
+- The simplest model: ``\partial_t V = f(V)``
+    - ``dV/dt = -V(V-a)(V-1)``, problem, the voltage will stay at ``1``, but this is not the real case.
+- properties of K+ channels
+    - K+ channels open --> leads to V decrease
+    - K+ channels should be V dependent
+    - k+ channels are slow, so that we can achieve
+        - V increase --> triggers fast Na+ inflow --> V increase further  --> (millisecond latter) K+ open --> push V down to resting potential
+- Refined model (Fitz-Nagumo equation):
+    - state: voltage ``V(t)``, numer of open K+ channels ``\omega_K(t)``
+    - ``d \omega_K / dt = (-\gamma \omega_K + V)\times \varepsilon``
+    - ``d V / dt = - V(V-a)(V-1) - \omega_K``
+    - phase diagram:![-c300](media/16757126931921.png)
+
+- Hodgkin-Huxley(HH) model skipped
 
 
