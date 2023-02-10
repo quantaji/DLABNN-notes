@@ -1,4 +1,4 @@
-# Deep learning with Spikes
+# 09 Deep learning with Spikes
 - neurobiology mostly uses spiking neural networks
 - computational model provide an accurate account of single neuron dynamics
     - experimentally patched a pre-synapse neuron and input noise, record the post-synaptic neuron, the recorded signal agree well with integrate and fire model

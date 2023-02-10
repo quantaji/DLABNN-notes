@@ -1,4 +1,4 @@
-# 09 Deep Learning with Spikes
+# 08 why spike
 - one major aspect differentiate bio and artificial NN.
 ## what is spike
 - action potential

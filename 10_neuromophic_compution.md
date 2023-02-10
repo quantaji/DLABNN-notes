@@ -1,4 +1,4 @@
-# Neuromorphic Intelligence: brain-inspired electronic sensory-processing systems
+# 10 Neuromorphic Intelligence: brain-inspired electronic sensory-processing systems
 
 ## basic notions of neuroscience
 - ANN: simulate abstract brain-inspired computing architecture on digital time-multiplexed computing substrate.

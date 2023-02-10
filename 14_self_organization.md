@@ -1,4 +1,4 @@
-# Self Organization -- How can biological leanring be so efficient?
+# 14 Self Organization -- How can biological leanring be so efficient?
 ## Deep learning
 - Limitation of DL
     - looking through human eyes
