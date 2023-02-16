@@ -32,7 +32,7 @@
 - architectural methods
     - work with topology of network, either completely freeze the network, or after the first task, you freeze the neurons.
 - regularization-based methods
-        - add loss terms to try to keep the network constant in behavior or weights
+    - add loss terms to try to keep the network constant in behavior or weights
 - data-replay based methods
 
 #### Architectural methods
@@ -85,7 +85,7 @@
     - we could guess new neurons to be *plastic* and older neurons to be more *stable*
     - research on the role of neurogenesis in the formaiton of new meories is inconclusive so far.
 - 3. Metaplasticity
-    - usually we talk about synaptic strengt, or "weight" which is changed by plasticity
+    - usually we talk about synaptic strength, or "weight" which is changed by plasticity
     - but previous activity could also change how easily a synapses undergoes plasticity
     - there are mechanisms to regularte the stability or plasticity of the single synapse, acting on a longer timescale
         - in my words, there are mechanisms that tunes the plasticity based on neuron activity, on the longer timescale
@@ -165,7 +165,7 @@
     - better than Deep Generative Replay, or Elastic Weight Consolidation, or synaptic intelligence
 - experiment also shows this method will also give higher final performance
 - might not scale with bigger network
-    - a biologically plausible solution is to add prob into network, gatings. this can be tuned by hypernetwork
+    - a biologically plausible solution is to add prob into network, gatings. this can be tuned by hypernetwork (modulatory netowork)
 
 
 ### Meta-learning in the brain

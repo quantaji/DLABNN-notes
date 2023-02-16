@@ -79,7 +79,7 @@
 - Difference Target Propagation solves this by learning only the difference: ``\hat{\boldsymbol{h}}_i=\boldsymbol{h}_i+g_i\left(\hat{\boldsymbol{h}}_{i+1}\right)-g_i\left(\boldsymbol{h}_{i+1}\right)=\boldsymbol{h}_i+s_i\left(Q_i \hat{\boldsymbol{h}}_{i+1}\right)-s_i\left(Q_i \boldsymbol{h}_{i+1}\right)``
     - work nicer, but this is close to BP, not biologically plausible
 
-## Bio-Plausible Deep Learning Through Control
+## Bio-Plausible Deep Learning Through Control (Deep Feedback Control (DFC))
 - teacher's own work https://arxiv.org/abs/2106.07887
 - dynamic version of target propagation
     - a controller at the top, do comparison, from MSE error ``u`` to a feadback signal ``Q``
@@ -89,3 +89,11 @@
     - feels like hidden layer receives both previous layer and top layer (but in a delayed way)
 - weight update: ``\Delta W_{i, \mathrm{ss}}=\eta\left(\mathbf{v}_{i, \mathrm{ss}}-\mathbf{v}_{i, \mathrm{ss}}^{\mathrm{ff}}\right) \mathbf{r}_{i-1, \mathrm{ss}}^T``
 - no gradient, only feedback signal, gradient is implicit
+- Advantages of the Deep Feedback Control (DFC) Algorithm:
+    - a) Supports continuous /asynchronous updates.
+    - b) Hidden layer activity does not need to be stored (no extra memory required).
+    - c) Highly parallelizable, but requires custom hardware.
+    - d) Very simple learning rule that is local in space and time and solely based on the neuron's activity and effectively implements a delta rule.
+    - e) Absence of phases or back-propagation of errors (e.g. as in standard BP).
+    - f) The optimization approach ‘Gauss-Newton’ which is fundamentally different from BP and standard gradient descent learning.
+

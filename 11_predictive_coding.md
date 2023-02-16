@@ -14,7 +14,6 @@
 - MMN is widely studies in health
     - Dyslexia (失读症): Diminished MMN in auditory stimuli (Kala et al 2000)
     - Schizophrenia(精神分裂症): Shorter MMN durations before psychotic episodes (2010)
-    - Alcoholism: Decreased MMN response, but enhanced after rehab. (Ahverninen et al, 2000 Audiology an Neurotology)
     - Alcoholism (酗酒): Decreased MMN response, but enhanced after rehab. (Ahverninen et al, 2000 Audiology an Neurotology)
     - Autism (自闭症): Prolonged/reduced MMN latencies (Ferri et al 2003/Abdeltawwab and Baz, 2015)
 - Predictive coding cause *Flash-Lag Effect* (https://michaelbach.de/ot/mot-flashLag/)

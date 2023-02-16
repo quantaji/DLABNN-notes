@@ -74,14 +74,14 @@
         - comes from a rate model and use spikes to emulate the rate, we prefer direct training
 - Today's menu: Surrogate gradients
     - replace Heviside with sigmoid ![-c300](media/16757699097632.png)
-    - derivative: ``\frac{\partial S_i}{\partial w_{i j}} \approx \underbrace{\sigma^{\prime}\left(U_i\right)}_{\text {post }} \underbrace{\epsilon * S_j(t)}_{\text {pre }}``
+    - derivative: ``\frac{\partial S_i}{\partial w_{i j}} \approx \underbrace{\sigma^{\prime}\left(U_i\right)}_{\text {post }} \underbrace{\epsilon * S_j(t)}_{\text {pre}}``
     - we ignore the reset dynamics in ``U``, making things better and more  stable during optimizaiton.
-    - this is a local learning rule, ``\frac{\partial w_{i j}}{\partial t} \equiv \lambda *(\underbrace{\epsilon * S_j(t)}_{\text {pre }} \underbrace{f\left(U_i\right)}_{\text {post }})\times \underbrace{e_i(t)}_{\text {error signal }}``, *error signal* + ``f`` is ``\sigma'`` or other function *post* signal + *pre* signal.
+    - this is a local learning rule, ``\frac{\partial w_{i j}}{\partial t} \equiv \lambda *(\underbrace{\epsilon * S_j(t)}_{\text {pre}} \underbrace{f\left(U_i\right)}_{\text {post }})\times \underbrace{e_i(t)}_{\text {error signal }}``, *error signal* + ``f`` is ``\sigma'`` or other function *post* signal + *pre* signal.
         - this looks related to *STDP-like* learning rule, at least like a hebbian learning rule
         - *voltage nonlinearity*, something like this ![-c300](media/16757708603128.png)
             - you only have plasticity (weight update) when you depolarize the membrane (voltage around threshould), this coincide with biological observation.
         - *error signal* is the third factor, depends on specific feedback.
-        - the ``\lambda *``, can be interpret0ate as *eligibility trace*, corresponds to Calsium Ca2+. If functions as bringing the past pre- and post- neural activities to futher.
+        - the ``\lambda *``, can be interpret0ate as *eligibility trace*, corresponds to Calsium Ca2+. If functions as bringing the past pre- and post- neural activities to future.
 - Push to multi-layer
     - ``\frac{\partial w_{i j}}{\partial t} \equiv \sum_k e_k(t) \epsilon *\left[w_{k i} \epsilon *\left(\epsilon * S_j(t) \sigma^{\prime}\left(U_i\right)\right) \sigma^{\prime}\left(U_k\right)\right]``
     - sum of errors appears in downstream neurons, there have to be some form of feadback that inform this neuron ??? ( what is this?)

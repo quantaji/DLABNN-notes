@@ -57,7 +57,7 @@
 - this is the solution to blowing up weight problem
 - use weight decay
     - ``\Delta w = \alpha y (x - y w)``
-    - Important: The weight decay term is proportional to y 2. That means w approaches unit length automatically while still pointing at the direction of maximum variance.
+    - Important: The weight decay term is proportional to ``y^2``. That means w approaches unit length automatically while still pointing at the direction of maximum variance.
 
 ## Covariance Rule
 - By TERRENCE J. SEJNOWSKI (one of the founders of Neurips), this is a second solution of weight blow up

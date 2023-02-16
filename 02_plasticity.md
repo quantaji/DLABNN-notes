@@ -64,7 +64,7 @@
 - Problems of Hebbian Learning, by Hinton *Ups and Downs of Hebb Synapses*
     - Hebbian rule: ``\mathrm{pre}\times\mathrm{post}``
     - error driven: ``\partial \mathrm{pre}\times \partial \mathrm{post}``, the latter one have better performance
-- One solution: Trhee factor Hebbian Learning rule: ``\dot{w}=F(M, \text { pre, post })``, by EPFL's group
+- One solution: Three factor Hebbian Learning rule: ``\dot{w}=F(M, \text { pre, post })``, by EPFL's group
 - Second solution (teacher's)
     - If the firing rate goes up, more likely that there is more positive post-pre time, so LTP,
         - and if the post neuron's firing rate goes down ``\delta/\delta t < 0``, then we get LTD.
