@@ -82,7 +82,7 @@
 ### Transformer
 - transformer block: layer norm + SA + skip connection + LN + SA + SC
 - transformer is layers of these block
-- *casual transformer* use attention mask to set all future values in attention to ``-\infinity`` to prevent seeing the future
+- *casual transformer* use attention mask to set all future values in attention to ``-\infty`` to prevent seeing the future
 - *positional encoding* to let model remember position
 - original transformer is a translation model with *encoder/decoder* structure
 
