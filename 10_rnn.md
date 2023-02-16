@@ -84,7 +84,7 @@
 - problem: if there is three neuron, given input: "AB, AB, AB" "BC, BC, BC", and "CA CA CA"
     - then the network goes A->B->C->A forever, never ends.
 - Solution: 
-    - normalize weight ``w_{ij} \leftarrow \frac{w_ij}/{\sum_w w_ij}``
+    - normalize weight ``w_{ij} \leftarrow \frac{w_ij}{\sum_w w_ij}``
     - set a threshold ``\Theta_i = \eta(x_i(t) - r_i)``
 - Usually, it's quite hard to use simple local rules to make the network useful and stable,
     - most of time, if you add too much rules, network becomes to stable, and then useless
